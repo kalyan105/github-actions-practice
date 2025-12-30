@@ -1,0 +1,23 @@
+name: Practice Workflow 2
+
+on: push
+
+jobs:
+  info-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Say hello
+        run: echo "This is my second GitHub Actions practice"
+
+      - name: Step 2 - Show current directory
+        run: pwd
+
+      - name: Step 3 - List files
+        run: ls -la
+
+      - name: Step 4 - Show date
+        run: date
+
+      - name: Step 5 - Show OS details
+        run: uname -a
