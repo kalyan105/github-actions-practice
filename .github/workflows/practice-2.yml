@@ -23,3 +23,17 @@ jobs:
         run: uname -a
       - name: show environment variables
         run: env |head -10
+      - name: show github context
+        run: echo "${{ toJson(github) }}"
+      - name: show runner environment
+        run: echo "${{ toJson(runner) }}"
+      - name: show job details
+        run: echo "${{ toJson(job) }}"
+      - name: show workflow details
+        run: echo "${{ toJson(workflow) }}"
+      - name: show steps details
+        run: echo "${{ toJson(steps) }}"
+      - name: show matrix details
+        run: echo "${{ toJson(matrix) }}"
+      - name: show secrets
+        run: echo "${{ toJson(secrets) }}"
