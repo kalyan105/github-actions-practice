@@ -21,3 +21,5 @@ jobs:
 
       - name: Step 5 - Show OS details
         run: uname -a
+      - name: show environment variables
+        run: env |head -10
